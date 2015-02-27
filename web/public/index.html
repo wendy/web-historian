@@ -2,11 +2,31 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script type="text/javascript" src="../../node_modules/jquery/dist/jquery.js"></script>
 </head>
 <body>
   Enter a URL here:
-  <form method="POST">
-    <input type="input" name="url"></input>
+  <form method="POST" action="/">
+    <input class="url" type="input" name="url"></input>
+    <input class="submit" type="submit" value="Submit URL"></input>
   </form>
+
+  <script type="text/javascript">
+    // $('.submit').on('click', function(event) {
+    //   event.preventDefault();
+    //   $.ajax({
+    //     type: 'POST',
+    //     url: 'http://localhost:8080/',
+    //     data: $('.url').val(),
+    //     success: function() {
+    //       console.log('successful post')
+    //     },
+    //     error: function() {
+    //       console.log('failed post')
+    //     }
+    //   });
+    // });
+  </script>
+
 </body>
 </html>
